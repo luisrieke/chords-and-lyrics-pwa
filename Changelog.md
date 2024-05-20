@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Please stick to the change type wording `Added`, `Changed`, `Removed`, `Fixed`.
 
+## [0.0.2] - 2024-05-21
+
+### Added
+
+- added a service worker, testing git versioning
+
 ## [0.0.1] - 2024-05-20
 
 ### Changed
