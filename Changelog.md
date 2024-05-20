@@ -11,7 +11,8 @@ Please stick to the change type wording `Added`, `Changed`, `Removed`, `Fixed`.
 
 ### Added
 
-- added a service worker, testing git versioning
+- added a service worker
+- added eslint rules
 
 ## [0.0.1] - 2024-05-20
 
