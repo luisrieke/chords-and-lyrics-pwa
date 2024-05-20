@@ -13,6 +13,7 @@ Please stick to the change type wording `Added`, `Changed`, `Removed`, `Fixed`.
 
 - added a service worker
 - added eslint rules
+- added npm versioning
 
 ## [0.0.1] - 2024-05-20
 
