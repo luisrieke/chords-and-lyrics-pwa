@@ -170,6 +170,7 @@ body.day-mode .song-list a {
 
 .chord-images {
   display: flex;
+  max-width: 400px;
   flex-wrap: wrap;
   gap: 10px;
   margin: 40px 0;
