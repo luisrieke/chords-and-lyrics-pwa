@@ -64,7 +64,3 @@ chords-and-lyrics/
 
 - **Home:** The main landing page that lists all available songs.
 - **SongLayout:** A layout component for song pages that includes mode switching and scroll controls.
-
-## Contact
-
-For any inquiries or feedback, please contact [Luis Rieke](https://luisrieke.com).
