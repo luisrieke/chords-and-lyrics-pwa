@@ -13,6 +13,7 @@ body {
 h1 {
   font-size: 24px;
   margin: 0;
+  color: rgb(144, 178, 183);
 }
 
 .mode-switcher {
@@ -134,10 +135,11 @@ body.day-mode .home-button {
 .song-list {
   max-width: fit-content;
   margin: 96px auto;
+  text-align: center;
 }
 
 .song-list ul {
-  list-style-type: disclosure-closed;
+  list-style-type: none;
   padding: 0;
 }
 
@@ -153,6 +155,15 @@ body.day-mode .home-button {
 
 body.day-mode .song-list a {
   color: black;
+}
+
+.logo {
+  display: block;
+  margin: 48px 0;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  border-radius: 24px;
 }
 
 /* Chord images */

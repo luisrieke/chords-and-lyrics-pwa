@@ -13,7 +13,14 @@ import {
 
 const Home = () => (
   <div className="song-list">
-    <h1>Song List</h1>
+    <div className="mode-switcher">
+      <button id="modeButton" onClick={toggleMode}>
+        🌞
+      </button>
+    </div>
+    <h1>Chords & Lyrics</h1>
+    <img src="/logo512.png" alt="Logo" className="logo" />
+    <h2>Song List</h2>
     <ul>
       <li>
         <Link to="/overkill">Overkill - Colin Hay</Link>
