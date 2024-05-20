@@ -24,6 +24,8 @@ module.exports = {
   plugins: ["react", "@typescript-eslint"],
   rules: {
     "no-restricted-globals": ["error", "event", "fdescribe"],
+    "react/prop-types": "off",
+    "react/no-unescaped-entities": "off",
   },
   overrides: [
     {
