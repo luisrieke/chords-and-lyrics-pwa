@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Wonderwall = () => {
   const songUrl = "https://chordsandlyrics.app/wonderwall";
@@ -32,6 +33,9 @@ const Wonderwall = () => {
 
   return (
     <div className="text-container">
+      <Helmet>
+        <title>Wonderwall - Oasis</title>
+      </Helmet>
       <div className="title-container">
         <h1>Wonderwall - Oasis</h1>
         <Link to="/">

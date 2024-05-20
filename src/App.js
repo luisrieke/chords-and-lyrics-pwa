@@ -4,6 +4,7 @@ import "./styles.css";
 import Overkill from "./songs/Overkill";
 import Wonderwall from "./songs/Wonderwall";
 import ScrollToTop from "./components/ScrollToTop";
+import { Helmet } from "react-helmet";
 import {
   toggleScroll,
   increaseSpeed,
@@ -13,6 +14,9 @@ import {
 
 const Home = () => (
   <div className="song-list">
+    <Helmet>
+      <title>Chords & Lyrics</title>
+    </Helmet>
     <div className="mode-switcher">
       <button id="modeButton" onClick={toggleMode}>
         🌞

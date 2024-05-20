@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Overkill = () => {
   const songUrl = "https://chordsandlyrics.app/overkill";
@@ -32,6 +33,9 @@ const Overkill = () => {
 
   return (
     <div className="text-container">
+      <Helmet>
+        <title>Overkill - Colin Hay</title>
+      </Helmet>
       <div className="title-container">
         <h1>Overkill - Colin Hay</h1>
         <Link to="/">

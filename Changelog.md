@@ -15,6 +15,15 @@ Please stick to the change type wording `Added`, `Changed`, `Removed`, `Fixed`.
 - added eslint rules
 - added npm versioning
 
+### Changed
+
+- Meta titles matching the songs
+
+### Fixed
+
+- URLs accessible via Netlify Redirects
+- Favicon visible also in live deployment
+
 ## [0.0.1] - 2024-05-20
 
 ### Changed
