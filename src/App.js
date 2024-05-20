@@ -1,24 +1,83 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import "./styles.css";
+import Overkill from "./songs/Overkill";
+import Wonderwall from "./songs/Wonderwall";
+import ScrollToTop from "./components/ScrollToTop";
+import {
+  toggleScroll,
+  increaseSpeed,
+  decreaseSpeed,
+  toggleMode,
+} from "./scrollHelper";
+
+const Home = () => (
+  <div className="song-list">
+    <h1>Song List</h1>
+    <ul>
+      <li>
+        <Link to="/overkill">Overkill - Colin Hay</Link>
+      </li>
+      <li>
+        <Link to="/wonderwall">Wonderwall - Oasis</Link>
+      </li>
+    </ul>
+  </div>
+);
+
+const SongLayout = ({ children }) => (
+  <div>
+    <div className="home-button-container">
+      <Link to="/">
+        <button className="home-button">Home</button>
+      </Link>
+    </div>
+    <div className="mode-switcher">
+      <button id="modeButton" onClick={toggleMode}>
+        🌞
+      </button>
+    </div>
+    {children}
+    <div className="controls">
+      <button id="scrollButton" onClick={toggleScroll}>
+        Scroll
+      </button>
+      <button className="control-button" onClick={increaseSpeed}>
+        +
+      </button>
+      <button className="control-button" onClick={decreaseSpeed}>
+        -
+      </button>
+    </div>
+  </div>
+);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ScrollToTop />
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/overkill"
+            element={
+              <SongLayout>
+                <Overkill />
+              </SongLayout>
+            }
+          />
+          <Route
+            path="/wonderwall"
+            element={
+              <SongLayout>
+                <Wonderwall />
+              </SongLayout>
+            }
+          />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
