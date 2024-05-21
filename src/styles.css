@@ -166,6 +166,10 @@ body.day-mode .song-list a {
   border-radius: 24px;
 }
 
+body.day-mode .logo {
+  filter: invert(1);
+}
+
 /* Chord images */
 
 .chord-images {
@@ -231,6 +235,9 @@ body.day-mode .song-url {
   cursor: pointer;
   font-size: 12px;
   transition: background-color 0.3s;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
 }
 
 .share-button:hover {

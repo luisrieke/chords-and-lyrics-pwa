@@ -18,6 +18,8 @@ Please stick to the change type wording `Added`, `Changed`, `Removed`, `Fixed`.
 ### Changed
 
 - Meta titles matching the songs
+- Improved Logo + Favicon
+- improved copy styles
 
 ### Fixed
 
