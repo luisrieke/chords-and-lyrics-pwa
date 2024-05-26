@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import "./styles.css";
 import Overkill from "./songs/Overkill";
 import Wonderwall from "./songs/Wonderwall";
+import SkyFullOfStars from "./songs/SkyFullOfStars";
 import ScrollToTop from "./components/ScrollToTop";
-import { Helmet } from "react-helmet";
 import {
   toggleScroll,
   increaseSpeed,
@@ -14,9 +15,9 @@ import {
 
 const Home = () => (
   <div className="song-list">
-    <Helmet>
+    <HelmetProvider>
       <title>Chords & Lyrics</title>
-    </Helmet>
+    </HelmetProvider>
     <div className="mode-switcher">
       <button id="modeButton" onClick={toggleMode}>
         🌞
@@ -24,13 +25,16 @@ const Home = () => (
     </div>
     <h1>Chords & Lyrics</h1>
     <img src="/logo512.png" alt="Logo" className="logo" />
-    <h2>Song List</h2>
+    <h2>Newly added songs:</h2>
     <ul>
       <li>
         <Link to="/overkill">Overkill - Colin Hay</Link>
       </li>
       <li>
         <Link to="/wonderwall">Wonderwall - Oasis</Link>
+      </li>
+      <li>
+        <Link to="/skyfullofstars">Sky Full of Stars - Coldplay</Link>
       </li>
     </ul>
   </div>
@@ -83,6 +87,14 @@ function App() {
             element={
               <SongLayout>
                 <Wonderwall />
+              </SongLayout>
+            }
+          />
+          <Route
+            path="/skyfullofstars"
+            element={
+              <SongLayout>
+                <SkyFullOfStars />
               </SongLayout>
             }
           />

@@ -159,9 +159,9 @@ body.day-mode .song-list a {
 
 .logo {
   display: block;
-  margin: 48px 0;
+  margin: 48px auto;
   width: 100%;
-  max-width: 240px;
+  max-width: 120px;
   height: auto;
   border-radius: 24px;
 }
@@ -175,16 +175,21 @@ body.day-mode .logo {
 .chord-images {
   display: flex;
   flex-wrap: wrap;
+  max-width: 600px;
   gap: 10px;
   margin: 40px 0;
 }
 
-.chord {
+.chord,
+.chord-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin: 4px 0;
+  padding: 10px;
+  border: 1px solid rgb(144, 178, 183, 0.5);
+  border-radius: 5px;
 }
 
 .chord img {
@@ -196,6 +201,16 @@ body.day-mode .logo {
 
 body.day-mode .chord img {
   filter: invert(0);
+}
+
+.chord-text span {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.chord-text pre {
+  font-family: monospace;
+  margin: 0;
 }
 
 /* Sharing functionality */

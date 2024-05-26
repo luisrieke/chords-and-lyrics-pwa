@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { HelmetProvider } from "react-helmet-async";
 
 const Wonderwall = () => {
   const songUrl = "https://chordsandlyrics.app/wonderwall";
@@ -33,9 +33,9 @@ const Wonderwall = () => {
 
   return (
     <div className="text-container">
-      <Helmet>
+      <HelmetProvider>
         <title>Wonderwall - Oasis</title>
-      </Helmet>
+      </HelmetProvider>
       <div className="title-container">
         <h1>Wonderwall - Oasis</h1>
         <Link to="/">
