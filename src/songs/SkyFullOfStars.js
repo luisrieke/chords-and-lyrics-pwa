@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import { increaseFontSize, decreaseFontSize } from "../fontResizer";
 
 const SkyFullOfStars = () => {
   const songUrl = "https://chordsandlyrics.app/skyfullofstars";
@@ -100,7 +101,7 @@ const SkyFullOfStars = () => {
           <pre>A|-9----|</pre>
           <pre>E|-x----|</pre>
         </div>
-        <p className="hint">
+        <div className="hint">
           Hint: Watch this{" "}
           <a
             href="https://www.youtube.com/watch?v=VPRjCeoBqrI"
@@ -110,7 +111,22 @@ const SkyFullOfStars = () => {
             video
           </a>{" "}
           for the official music video by Coldplay.
-        </p>
+        </div>
+        <div className="font-size-controls">
+          <h2>font size:</h2>
+          <button
+            className="font-size-controls-button"
+            onClick={increaseFontSize}
+          >
+            +
+          </button>
+          <button
+            className="font-size-controls-button"
+            onClick={decreaseFontSize}
+          >
+            -
+          </button>
+        </div>
       </div>
       <p className="chords">C#m &nbsp; A &nbsp; E &nbsp; G#m ~repeat 4x</p>
       <p>[Verse]</p>

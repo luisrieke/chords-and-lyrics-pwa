@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import { increaseFontSize, decreaseFontSize } from "../fontResizer";
 
 const Overkill = () => {
   const songUrl = "https://chordsandlyrics.app/overkill";
@@ -95,7 +96,7 @@ const Overkill = () => {
           <span>G</span>
           <img src="/chords/g.png" alt="G chord" />
         </div>
-        <p className="hint">
+        <div className="hint">
           Hint: The wonderful Colin Hay also explained his own chords in this{" "}
           <a
             href="https://www.youtube.com/watch?v=yWbjnuWU4iQ"
@@ -105,7 +106,22 @@ const Overkill = () => {
             video
           </a>
           .
-        </p>
+        </div>
+        <div className="font-size-controls">
+          <h2>font size:</h2>
+          <button
+            className="font-size-controls-button"
+            onClick={increaseFontSize}
+          >
+            +
+          </button>
+          <button
+            className="font-size-controls-button"
+            onClick={decreaseFontSize}
+          >
+            -
+          </button>
+        </div>
       </div>
       <p>[Verse]</p>
       <p className="chords">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import { increaseFontSize, decreaseFontSize } from "../fontResizer";
 
 const Wonderwall = () => {
   const songUrl = "https://chordsandlyrics.app/wonderwall";
@@ -74,6 +75,21 @@ const Wonderwall = () => {
         <div className="chord">
           <span>C</span>
           <img src="/chords/c.png" alt="C chord" />
+        </div>
+        <div className="font-size-controls">
+          <h2>font size:</h2>
+          <button
+            className="font-size-controls-button"
+            onClick={increaseFontSize}
+          >
+            +
+          </button>
+          <button
+            className="font-size-controls-button"
+            onClick={decreaseFontSize}
+          >
+            -
+          </button>
         </div>
       </div>
       <p>[Verse 1]</p>
