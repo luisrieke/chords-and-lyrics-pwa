@@ -6,6 +6,7 @@ import { increaseFontSize, decreaseFontSize } from "../fontResizer";
 const SkyFullOfStars = () => {
   const songUrl = "https://chordsandlyrics.app/skyfullofstars";
   const [buttonText, setButtonText] = useState("Share");
+  const [showChords, setShowChords] = useState(false);
 
   const handleShare = () => {
     if (navigator.share) {
@@ -30,6 +31,10 @@ const SkyFullOfStars = () => {
 
   const handleUrlClick = (e) => {
     e.target.select();
+  };
+
+  const toggleChords = () => {
+    setShowChords(!showChords);
   };
 
   return (
@@ -59,51 +64,62 @@ const SkyFullOfStars = () => {
           {buttonText}
         </button>
       </div>
-      <div className="chord-images">
-        <div className="chord-text">
-          <span>C#m</span>
-          <pre>e|-0----|</pre>
-          <pre>B|-0----|</pre>
-          <pre>G|-9----|</pre>
-          <pre>D|-11---|</pre>
-          <pre>A|-11---|</pre>
-          <pre>E|-x----|</pre>
-        </div>
-        <div className="chord-text">
-          <span>A</span>
-          <pre>e|-0----|</pre>
-          <pre>B|-0----|</pre>
-          <pre>G|-6----|</pre>
-          <pre>D|-7----|</pre>
-          <pre>A|-7----|</pre>
-          <pre>E|-x----|</pre>
-        </div>
-        <div className="chord-text">
-          <span>E</span>
-          <pre>e|-0----|</pre>
-          <pre>B|-0----|</pre>
-          <pre>G|-1----|</pre>
-          <pre>D|-2----|</pre>
-          <pre>A|-2----|</pre>
-          <pre>E|-x----|</pre>
-        </div>
-        <div className="chord-text">
-          <span>G#m</span>
-          <pre>e|-0----|</pre>
-          <pre>B|-0----|</pre>
-          <pre>G|-4----|</pre>
-          <pre>D|-6----|</pre>
-          <pre>A|-6----|</pre>
-          <pre>E|-x----|</pre>
-        </div>
-        <div className="chord-text">
-          <span>B</span>
-          <pre>e|-0----|</pre>
-          <pre>B|-0----|</pre>
-          <pre>G|-8----|</pre>
-          <pre>D|-9----|</pre>
-          <pre>A|-9----|</pre>
-          <pre>E|-x----|</pre>
+      <div className="song-meta-section">
+        <div className="chord-section">
+          <div>
+            <button onClick={toggleChords}>
+              {showChords ? "Hide chords" : "Show chords"}
+            </button>
+          </div>
+          {showChords && (
+            <div className="chords-listed">
+              <div className="chord-text">
+                <span>C#m</span>
+                <pre>e|-0----|</pre>
+                <pre>B|-0----|</pre>
+                <pre>G|-9----|</pre>
+                <pre>D|-11---|</pre>
+                <pre>A|-11---|</pre>
+                <pre>E|-x----|</pre>
+              </div>
+              <div className="chord-text">
+                <span>A</span>
+                <pre>e|-0----|</pre>
+                <pre>B|-0----|</pre>
+                <pre>G|-6----|</pre>
+                <pre>D|-7----|</pre>
+                <pre>A|-7----|</pre>
+                <pre>E|-x----|</pre>
+              </div>
+              <div className="chord-text">
+                <span>E</span>
+                <pre>e|-0----|</pre>
+                <pre>B|-0----|</pre>
+                <pre>G|-1----|</pre>
+                <pre>D|-2----|</pre>
+                <pre>A|-2----|</pre>
+                <pre>E|-x----|</pre>
+              </div>
+              <div className="chord-text">
+                <span>G#m</span>
+                <pre>e|-0----|</pre>
+                <pre>B|-0----|</pre>
+                <pre>G|-4----|</pre>
+                <pre>D|-6----|</pre>
+                <pre>A|-6----|</pre>
+                <pre>E|-x----|</pre>
+              </div>
+              <div className="chord-text">
+                <span>B</span>
+                <pre>e|-0----|</pre>
+                <pre>B|-0----|</pre>
+                <pre>G|-8----|</pre>
+                <pre>D|-9----|</pre>
+                <pre>A|-9----|</pre>
+                <pre>E|-x----|</pre>
+              </div>
+            </div>
+          )}
         </div>
         <div className="hint">
           Hint: Watch this{" "}

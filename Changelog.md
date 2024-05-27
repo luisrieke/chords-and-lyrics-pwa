@@ -21,6 +21,7 @@ Please stick to the change type wording `Added`, `Changed`, `Removed`, `Fixed`.
 ### Changed
 
 - improved the layout of the song list
+- chords are now hidden by default
 
 ### Fixed
 

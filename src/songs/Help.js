@@ -6,6 +6,7 @@ import { increaseFontSize, decreaseFontSize } from "../fontResizer";
 const Help = () => {
   const songUrl = "https://chordsandlyrics.app/help";
   const [buttonText, setButtonText] = useState("Share");
+  const [showChords, setShowChords] = useState(false);
 
   const handleShare = () => {
     if (navigator.share) {
@@ -29,6 +30,10 @@ const Help = () => {
 
   const handleUrlClick = (e) => {
     e.target.select();
+  };
+
+  const toggleChords = () => {
+    setShowChords(!showChords);
   };
 
   return (
@@ -60,42 +65,53 @@ const Help = () => {
           {buttonText}
         </button>
       </div>
-      <div className="chord-images">
-        <div className="chord">
-          <span>Bm</span>
-          <img src="/chords/bm.png" alt="Bm chord" />
-        </div>
-        <div className="chord">
-          <span>Bm/A</span>
-          <img src="/chords/bma.png" alt="Bm/A chord" />
-        </div>
-        <div className="chord">
-          <span>G</span>
-          <img src="/chords/g.png" alt="G chord" />
-        </div>
-        <div className="chord">
-          <span>G/F#</span>
-          <img src="/chords/gf-sharp.png" alt="G/F# chord" />
-        </div>
-        <div className="chord">
-          <span>E</span>
-          <img src="/chords/e.png" alt="E chord" />
-        </div>
-        <div className="chord">
-          <span>A</span>
-          <img src="/chords/a.png" alt="A chord" />
-        </div>
-        <div className="chord">
-          <span>C#m</span>
-          <img src="/chords/c-sharpm.png" alt="C#m chord" />
-        </div>
-        <div className="chord">
-          <span>F#m</span>
-          <img src="/chords/f-sharpm.png" alt="F#m chord" />
-        </div>
-        <div className="chord">
-          <span>D</span>
-          <img src="/chords/d.png" alt="D chord" />
+      <div className="song-meta-section">
+        <div className="chord-section">
+          <div>
+            <button onClick={toggleChords}>
+              {showChords ? "Hide chords" : "Show chords"}
+            </button>
+          </div>
+          {showChords && (
+            <div className="chords-listed">
+              <div className="chord">
+                <span>Bm</span>
+                <img src="/chords/bm.png" alt="Bm chord" />
+              </div>
+              <div className="chord">
+                <span>Bm/A</span>
+                <img src="/chords/bma.png" alt="Bm/A chord" />
+              </div>
+              <div className="chord">
+                <span>G</span>
+                <img src="/chords/g.png" alt="G chord" />
+              </div>
+              <div className="chord">
+                <span>G/F#</span>
+                <img src="/chords/gf-sharp.png" alt="G/F# chord" />
+              </div>
+              <div className="chord">
+                <span>E</span>
+                <img src="/chords/e.png" alt="E chord" />
+              </div>
+              <div className="chord">
+                <span>A</span>
+                <img src="/chords/a.png" alt="A chord" />
+              </div>
+              <div className="chord">
+                <span>C#m</span>
+                <img src="/chords/c-sharpm.png" alt="C#m chord" />
+              </div>
+              <div className="chord">
+                <span>F#m</span>
+                <img src="/chords/f-sharpm.png" alt="F#m chord" />
+              </div>
+              <div className="chord">
+                <span>D</span>
+                <img src="/chords/d.png" alt="D chord" />
+              </div>
+            </div>
+          )}
         </div>
         <div className="font-size-controls">
           <h2>font size:</h2>
@@ -135,8 +151,8 @@ const Help = () => {
       <p className="chords">
         A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m
+        &nbsp; &nbsp; &nbsp; &nbsp; C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m
       </p>
       <p>When I was younger, so much younger than today,</p>
       <p className="chords">
@@ -155,8 +171,8 @@ const Help = () => {
       <p className="chords">
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; D &nbsp; &nbsp; &nbsp; &nbsp; G &nbsp; &nbsp; &nbsp; &nbsp; A
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D &nbsp; &nbsp; &nbsp; &nbsp;
+        G &nbsp; &nbsp; &nbsp; &nbsp; A
       </p>
       <p>Now I find I've changed my mind, I've opened up the doors.</p>
       <p>
@@ -169,7 +185,7 @@ const Help = () => {
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bm/A &nbsp; G &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; G/F#
+        &nbsp; G/F#
       </p>
       <p>
         Help me if you can I'm feeling down, and I do appreciate you being
@@ -179,8 +195,7 @@ const Help = () => {
         E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; A
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
       </p>
       <p>
         Help me get my feet back on the ground, won't you please please help me.
@@ -192,29 +207,27 @@ const Help = () => {
       <p className="chords">
         A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m
+        &nbsp; &nbsp; C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; F#m
       </p>
       <p>And now my life has changed in oh so many ways,</p>
       <p className="chords">
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; D &nbsp; &nbsp; &nbsp; &nbsp; G &nbsp;
-        &nbsp; A
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+        &nbsp; &nbsp; &nbsp; &nbsp; G &nbsp; &nbsp; A
       </p>
       <p>My independence seemed to vanish in the haze.</p>
       <p className="chords">
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#m
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; F#m
+        &nbsp; F#m
       </p>
       <p>But every now and then I feel so insecure,</p>
       <p className="chords">
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D &nbsp; &nbsp;
-        &nbsp; &nbsp; G &nbsp; &nbsp; &nbsp; &nbsp; A
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+        &nbsp; &nbsp; &nbsp; &nbsp; G &nbsp; &nbsp; &nbsp; &nbsp; A
       </p>
       <p>I know that I just need you like I've never done before.</p>
       <p>
@@ -227,7 +240,7 @@ const Help = () => {
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bm/A &nbsp; G &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; G/F#
+        G/F#
       </p>
       <p>
         Help me if you can I'm feeling down, and I do appreciate you being
@@ -237,8 +250,7 @@ const Help = () => {
         E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; A
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
       </p>
       <p>
         Help me get my feet back on the ground, won't you please please help me.
@@ -250,28 +262,27 @@ const Help = () => {
       <p className="chords">
         A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m
+        &nbsp; &nbsp; C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; F#m
       </p>
       <p>When I was younger, so much younger than today,</p>
       <p className="chords">
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; D &nbsp; &nbsp; &nbsp; &nbsp; G &nbsp; &nbsp; A
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+        &nbsp; &nbsp; &nbsp; &nbsp; G &nbsp; &nbsp; A
       </p>
       <p>I never needed anybody's help in any way.</p>
       <p className="chords">
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#m &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m
+        C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; F#m
       </p>
       <p>But now those days are gone I'm not so self-assured,</p>
       <p className="chords">
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; D &nbsp; &nbsp; &nbsp; &nbsp; G &nbsp; &nbsp; &nbsp; &nbsp; A
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+        &nbsp; &nbsp; &nbsp; &nbsp; G &nbsp; &nbsp; &nbsp; &nbsp; A
       </p>
       <p>Now I find I've changed my mind, I've opened up the doors.</p>
       <p>
@@ -284,7 +295,7 @@ const Help = () => {
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bm/A &nbsp; G &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; G/F#
+        G/F#
       </p>
       <p>
         Help me if you can I'm feeling down, and I do appreciate you being
@@ -294,8 +305,7 @@ const Help = () => {
         E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; A
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
       </p>
       <p>
         Help me get my feet back on the ground, won't you please please help me.

@@ -6,6 +6,7 @@ import { increaseFontSize, decreaseFontSize } from "../fontResizer";
 const Wonderwall = () => {
   const songUrl = "https://chordsandlyrics.app/wonderwall";
   const [buttonText, setButtonText] = useState("Share");
+  const [showChords, setShowChords] = useState(false);
 
   const handleShare = () => {
     if (navigator.share) {
@@ -30,6 +31,10 @@ const Wonderwall = () => {
 
   const handleUrlClick = (e) => {
     e.target.select();
+  };
+
+  const toggleChords = () => {
+    setShowChords(!showChords);
   };
 
   return (
@@ -59,26 +64,37 @@ const Wonderwall = () => {
           {buttonText}
         </button>
       </div>
-      <div className="chord-images">
-        <div className="chord">
-          <span>Em</span>
-          <img src="/chords/em.png" alt="Em chord" />
-        </div>
-        <div className="chord">
-          <span>G</span>
-          <img src="/chords/g.png" alt="G chord" />
-        </div>
-        <div className="chord">
-          <span>D</span>
-          <img src="/chords/d.png" alt="D chord" />
-        </div>
-        <div className="chord">
-          <span>A7sus4</span>
-          <img src="/chords/a7sus4.png" alt="A7sus4 chord" />
-        </div>
-        <div className="chord">
-          <span>C</span>
-          <img src="/chords/c.png" alt="C chord" />
+      <div className="song-meta-section">
+        <div className="chord-section">
+          <div>
+            <button onClick={toggleChords}>
+              {showChords ? "Hide chords" : "Show chords"}
+            </button>
+          </div>
+          {showChords && (
+            <div className="chords-listed">
+              <div className="chord">
+                <span>Em</span>
+                <img src="/chords/em.png" alt="Em chord" />
+              </div>
+              <div className="chord">
+                <span>G</span>
+                <img src="/chords/g.png" alt="G chord" />
+              </div>
+              <div className="chord">
+                <span>D</span>
+                <img src="/chords/d.png" alt="D chord" />
+              </div>
+              <div className="chord">
+                <span>A7sus4</span>
+                <img src="/chords/a7sus4.png" alt="A7sus4 chord" />
+              </div>
+              <div className="chord">
+                <span>C</span>
+                <img src="/chords/c.png" alt="C chord" />
+              </div>
+            </div>
+          )}
         </div>
         <div className="font-size-controls">
           <h2>font size:</h2>

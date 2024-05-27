@@ -6,6 +6,7 @@ import { increaseFontSize, decreaseFontSize } from "../fontResizer";
 const Overkill = () => {
   const songUrl = "https://chordsandlyrics.app/overkill";
   const [buttonText, setButtonText] = useState("Share");
+  const [showChords, setShowChords] = useState(false);
 
   const handleShare = () => {
     if (navigator.share) {
@@ -30,6 +31,10 @@ const Overkill = () => {
 
   const handleUrlClick = (e) => {
     e.target.select();
+  };
+
+  const toggleChords = () => {
+    setShowChords(!showChords);
   };
 
   return (
@@ -59,46 +64,57 @@ const Overkill = () => {
           {buttonText}
         </button>
       </div>
-      <div className="chord-images">
-        <div className="chord">
-          <span>D</span>
-          <img src="/chords/d.png" alt="D chord" />
-        </div>
-        <div className="chord">
-          <span>A/C#</span>
-          <img src="/chords/ac-sharp.png" alt="A/C# chord" />
-        </div>
-        <div className="chord">
-          <span>C</span>
-          <img src="/chords/c.png" alt="C chord" />
-        </div>
-        <div className="chord">
-          <span>G/B</span>
-          <img src="/chords/gb.png" alt="G/B chord" />
-        </div>
-        <div className="chord">
-          <span>Bm</span>
-          <img src="/chords/bm.png" alt="Bm chord" />
-        </div>
-        <div className="chord">
-          <span>Asus4</span>
-          <img src="/chords/asus4.png" alt="Asus4 chord" />
-        </div>
-        <div className="chord">
-          <span>A</span>
-          <img src="/chords/a.png" alt="A chord" />
-        </div>
-        <div className="chord">
-          <span>F#sus4</span>
-          <img src="/chords/f-sharpsus4.png" alt="F#sus4 chord" />
-        </div>
-        <div className="chord">
-          <span>F#7</span>
-          <img src="/chords/f-sharp7.png" alt="F#7 chord" />
-        </div>
-        <div className="chord">
-          <span>G</span>
-          <img src="/chords/g.png" alt="G chord" />
+      <div className="song-meta-section">
+        <div className="chord-section">
+          <div>
+            <button onClick={toggleChords}>
+              {showChords ? "Hide chords" : "Show chords"}
+            </button>
+          </div>
+          {showChords && (
+            <div className="chords-listed">
+              <div className="chord">
+                <span>D</span>
+                <img src="/chords/d.png" alt="D chord" />
+              </div>
+              <div className="chord">
+                <span>A/C#</span>
+                <img src="/chords/ac-sharp.png" alt="A/C# chord" />
+              </div>
+              <div className="chord">
+                <span>C</span>
+                <img src="/chords/c.png" alt="C chord" />
+              </div>
+              <div className="chord">
+                <span>G/B</span>
+                <img src="/chords/gb.png" alt="G/B chord" />
+              </div>
+              <div className="chord">
+                <span>Bm</span>
+                <img src="/chords/bm.png" alt="Bm chord" />
+              </div>
+              <div className="chord">
+                <span>Asus4</span>
+                <img src="/chords/asus4.png" alt="Asus4 chord" />
+              </div>
+              <div className="chord">
+                <span>A</span>
+                <img src="/chords/a.png" alt="A chord" />
+              </div>
+              <div className="chord">
+                <span>F#sus4</span>
+                <img src="/chords/f-sharpsus4.png" alt="F#sus4 chord" />
+              </div>
+              <div className="chord">
+                <span>F#7</span>
+                <img src="/chords/f-sharp7.png" alt="F#7 chord" />
+              </div>
+              <div className="chord">
+                <span>G</span>
+                <img src="/chords/g.png" alt="G chord" />
+              </div>
+            </div>
+          )}
         </div>
         <div className="hint">
           Hint: The wonderful Colin Hay also explained his own chords in this{" "}
