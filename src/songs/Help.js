@@ -36,6 +36,10 @@ const Help = () => {
       <HelmetProvider>
         <Helmet>
           <title>Help - The Beatles</title>
+          <meta
+            name="description"
+            content="Chords and lyrics for Help by The Beatles"
+          />
         </Helmet>
       </HelmetProvider>
       <div className="title-container">

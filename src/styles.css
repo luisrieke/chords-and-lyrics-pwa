@@ -162,6 +162,10 @@ body.day-mode .home-button {
   width: 40px;
 }
 
+body.day-mode .font-size-controls button {
+  background-color: rgb(144, 178, 183, 0.4);
+}
+
 /* Start page */
 
 .song-list {
@@ -202,6 +206,30 @@ body.day-mode .logo {
   filter: invert(1);
 }
 
+.request-button {
+  background-color: rgb(144, 178, 183, 0.4);
+  color: rgb(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+}
+
+.request-button:hover {
+  background-color: rgb(144, 178, 183);
+}
+
+body.day-mode .request-button {
+  background-color: rgb(144, 178, 183, 0.4);
+  color: rgb(0, 0, 0, 0.9);
+}
+
+body.day-mode .request-button:hover {
+  background-color: rgb(144, 178, 183);
+}
+
 /* Chord images */
 
 .chord-images {
@@ -221,7 +249,7 @@ body.day-mode .logo {
   margin: 4px 0;
   padding: 10px;
   border: 1px solid rgb(144, 178, 183, 0.5);
-  border-radius: 5px;
+  border-radius: 12px;
 }
 
 .chord img {
@@ -260,7 +288,7 @@ body.day-mode .chord img {
   color: rgb(144, 178, 183);
   background-color: rgb(0, 0, 0);
   border: 1px solid rgb(144, 178, 183);
-  border-radius: 5px;
+  border-radius: 12px;
   padding: 5px;
   width: 250px;
   cursor: pointer;
@@ -276,7 +304,7 @@ body.day-mode .song-url {
   background-color: rgb(144, 178, 183);
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 12px;
   padding: 5px 10px;
   cursor: pointer;
   font-size: 12px;

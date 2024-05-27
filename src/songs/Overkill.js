@@ -36,6 +36,10 @@ const Overkill = () => {
     <div className="text-container">
       <HelmetProvider>
         <title>Overkill - Colin Hay</title>
+        <meta
+          name="description"
+          content="Chords and lyrics for Overkill by Colin Hay"
+        />
       </HelmetProvider>
       <div className="title-container">
         <h1>Overkill - Colin Hay</h1>

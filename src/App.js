@@ -41,6 +41,18 @@ const Home = () => (
         <Link to="/help">Help - Beatles</Link>
       </li>
     </ul>
+    <button
+      className="request-button"
+      onClick={() =>
+        window.open(
+          "https://docs.google.com/spreadsheets/d/1-qr1hsEhlJ6oUqY5bIDEc8BP9Wv-8GULNWll-kOruiY/edit?usp=sharing",
+          "_blank"
+        )
+      }
+      type="button"
+    >
+      request a song
+    </button>
   </div>
 );
 

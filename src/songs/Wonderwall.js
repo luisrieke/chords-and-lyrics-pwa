@@ -36,6 +36,10 @@ const Wonderwall = () => {
     <div className="text-container">
       <HelmetProvider>
         <title>Wonderwall - Oasis</title>
+        <meta
+          name="description"
+          content="Chords and lyrics for Wonderwall by Oasis"
+        />
       </HelmetProvider>
       <div className="title-container">
         <h1>Wonderwall - Oasis</h1>

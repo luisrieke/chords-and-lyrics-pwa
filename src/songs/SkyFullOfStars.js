@@ -36,6 +36,10 @@ const SkyFullOfStars = () => {
     <div className="text-container">
       <HelmetProvider>
         <title>Sky Full of Stars - Coldplay</title>
+        <meta
+          name="description"
+          content="Chords and lyrics for Sky Full of Stars by Coldplay."
+        />
       </HelmetProvider>
       <div className="title-container">
         <h1>Sky Full of Stars - Coldplay</h1>

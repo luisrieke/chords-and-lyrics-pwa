@@ -15,10 +15,16 @@ Please stick to the change type wording `Added`, `Changed`, `Removed`, `Fixed`.
 - added a new song: Help from the Beatles
 - added a new song: Sky full of Stars from Coldplay
 - added chords styling for non-image songs
+- Meta tags for SEO and socials
+- button to requests new songs
 
 ### Changed
 
 - improved the layout of the song list
+
+### Fixed
+
+- fixed font resizer layout bugs
 
 ## [0.0.2] - 2024-05-21
 
