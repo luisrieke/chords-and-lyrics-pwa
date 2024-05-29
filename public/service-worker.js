@@ -1,5 +1,3 @@
-// This is the service worker with the Cache-first network
-
 const CACHE_NAME = "cache-v1";
 const urlsToCache = [
   "/",
@@ -9,6 +7,7 @@ const urlsToCache = [
   // Add other assets you want to cache
 ];
 
+// Install event: cache files
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
@@ -16,19 +15,36 @@ self.addEventListener("install", (event) => {
       return cache.addAll(urlsToCache);
     })
   );
+  self.skipWaiting(); // Force the waiting service worker to become the active service worker
 });
 
+// Fetch event: serve cached content if available
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
       if (response) {
         return response;
       }
-      return fetch(event.request);
+      return fetch(event.request).then((response) => {
+        // Check if we received a valid response
+        if (!response || response.status !== 200 || response.type !== "basic") {
+          return response;
+        }
+
+        // Clone the response
+        const responseToCache = response.clone();
+
+        caches.open(CACHE_NAME).then((cache) => {
+          cache.put(event.request, responseToCache);
+        });
+
+        return response;
+      });
     })
   );
 });
 
+// Activate event: delete old caches
 self.addEventListener("activate", (event) => {
   const cacheWhitelist = [CACHE_NAME];
   event.waitUntil(
@@ -42,4 +58,5 @@ self.addEventListener("activate", (event) => {
       );
     })
   );
+  self.clients.claim(); // Take control of all clients immediately
 });
