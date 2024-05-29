@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Please stick to the change type wording `Added`, `Changed`, `Removed`, `Fixed`.
 
+## [0.0.4] - 2024-05-30
+
+### Fixed
+
+- fixed caching & service worker issues
+
 ## [0.0.3] - 2024-05-27
 
 ### Added
