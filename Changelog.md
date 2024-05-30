@@ -9,6 +9,14 @@ Please stick to the change type wording `Added`, `Changed`, `Removed`, `Fixed`.
 
 ## [0.0.4] - 2024-05-30
 
+### Added
+
+- added a new song: Dream Catch Me from Newton Faulkner
+
+### Changed
+
+- made the song text more readable, imrpoved the layout
+
 ### Fixed
 
 - fixed caching & service worker issues

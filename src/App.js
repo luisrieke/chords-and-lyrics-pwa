@@ -6,6 +6,7 @@ import Overkill from "./songs/Overkill";
 import Wonderwall from "./songs/Wonderwall";
 import SkyFullOfStars from "./songs/SkyFullOfStars";
 import Help from "./songs/Help";
+import DreamCatchMe from "./songs/DreamCatchMe";
 import ScrollToTop from "./components/ScrollToTop";
 import {
   toggleScroll,
@@ -39,6 +40,9 @@ const Home = () => (
       </li>
       <li>
         <Link to="/help">Help - Beatles</Link>
+      </li>
+      <li>
+        <Link to="/dreamcatchme">Dream Catch Me - Newton Faulkner</Link>
       </li>
     </ul>
     <button
@@ -119,6 +123,14 @@ function App() {
             element={
               <SongLayout>
                 <Help />
+              </SongLayout>
+            }
+          />
+          <Route
+            path="/dreamcatchme"
+            element={
+              <SongLayout>
+                <DreamCatchMe />
               </SongLayout>
             }
           />

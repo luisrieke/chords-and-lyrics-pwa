@@ -116,17 +116,6 @@ const Overkill = () => {
             </div>
           )}
         </div>
-        <div className="hint">
-          Hint: The wonderful Colin Hay also explained his own chords in this{" "}
-          <a
-            href="https://www.youtube.com/watch?v=yWbjnuWU4iQ"
-            target="_blank"
-            rel="noreferrer"
-          >
-            video
-          </a>
-          .
-        </div>
         <div className="font-size-controls">
           <h2>font size:</h2>
           <button
@@ -142,181 +131,218 @@ const Overkill = () => {
             -
           </button>
         </div>
+        <div className="hint">
+          Hint: The wonderful Colin Hay also explained his own chords in this{" "}
+          <a
+            href="https://www.youtube.com/watch?v=yWbjnuWU4iQ"
+            target="_blank"
+            rel="noreferrer"
+          >
+            video
+          </a>
+          .
+        </div>
       </div>
-      <p>[Verse]</p>
+
+      {/* Verse 1 */}
+
+      <p className="verse-chorus-title">[Verse 1]</p>
+      <p className="chords">
+        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; A/C#
+      </p>
+      <p>&nbsp; &nbsp; I can't get to sleep</p>
+      <p className="chords">
+        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        G/B
+      </p>
+      <p>&nbsp; &nbsp; I think about the implications</p>
       <p className="chords">
         D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A/C#
       </p>
-      <p>I can't get to sleep</p>
+      <p>&nbsp; &nbsp; Of diving in too deep</p>
       <p className="chords">
         C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; G/B
       </p>
-      <p>I think about the implications</p>
+      <p>&nbsp; &nbsp; And possibly the complications</p>
       <p className="chords">
-        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A/C#
+        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; A/C#
       </p>
-      <p>Of diving in too deep</p>
+      <p>&nbsp; &nbsp; Especially at night</p>
       <p className="chords">
-        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G/B
+        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        G/B
       </p>
-      <p>And possibly the complications</p>
+      <p>&nbsp; &nbsp; I worry over situations</p>
       <p className="chords">
-        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A/C#
+        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; A/C#
       </p>
-      <p>Especially at night</p>
+      <p>&nbsp; &nbsp; I know will be alright</p>
       <p className="chords">
-        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G/B
+        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G/B
       </p>
-      <p>I worry over situations</p>
+      <p>&nbsp; &nbsp; Perhaps its just my imagination</p>
+
+      {/* Chorus 1 */}
+
+      <p className="verse-chorus-title">[Chorus 1]</p>
       <p className="chords">
-        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A/C#
+        Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; Asus4 &nbsp; &nbsp; &nbsp; A
       </p>
-      <p>I know will be alright</p>
+      <p>&nbsp; &nbsp; Day after day it reappears</p>
       <p className="chords">
-        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G/B
+        Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; Asus4 &nbsp; &nbsp; &nbsp; A
       </p>
-      <p>Perhaps its just my imagination</p>
-      <p>
-        <br />
-      </p>
-      <p>[Chorus]</p>
+      <p>&nbsp; &nbsp; Night after night my heartbeat shows the fear</p>
       <p className="chords">
-        Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Asus4
-        &nbsp; A
-      </p>
-      <p>Day after day it reappears</p>
-      <p className="chords">
-        Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Asus4
-        &nbsp; A
-      </p>
-      <p>Night after night my heartbeat shows the fear</p>
-      <p className="chords">
-        F#sus4 &nbsp; F#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
+        F#sus4 &nbsp; F#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; G
       </p>
       <p>Ghosts appear and fade away</p>
       <p className="chords">
         Asus4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
       </p>
-      <p>
-        <br />
-      </p>
-      <p>[Verse]</p>
+
+      {/* Verse 2 */}
+
+      <p className="verse-chorus-title">[Verse 2]</p>
       <p className="chords">
-        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A/C#
+        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A/C#
       </p>
-      <p>Alone between the sheets</p>
+      <p>&nbsp; &nbsp; Alone between the sheets</p>
       <p className="chords">
         C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; G/B
       </p>
-      <p>Only brings exasperation</p>
+      <p>&nbsp; &nbsp; Only brings exasperation</p>
       <p className="chords">
-        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A/C#
+        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A/C#
       </p>
-      <p>It's time to walk the streets</p>
+      <p>&nbsp; &nbsp; It's time to walk the streets</p>
       <p className="chords">
-        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G/B
+        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; G/B
       </p>
-      <p>Smell the, ... desperation</p>
+      <p>&nbsp; &nbsp; Smell the, ... desperation</p>
       <p className="chords">
-        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A/C#
+        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; A/C#
       </p>
-      <p>At least there's pretty lights</p>
+      <p>&nbsp; &nbsp; At least there's pretty lights</p>
       <p className="chords">
-        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G/B
+        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; G/B
       </p>
-      <p>And though there's little variation</p>
+      <p>&nbsp; &nbsp; And though there's little variation</p>
       <p className="chords">
-        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A/C#
+        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A/C#
       </p>
-      <p>It nullifies the night</p>
+      <p>&nbsp; &nbsp; It nullifies the night</p>
+      <p className="chords">C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G/B</p>
+      <p>&nbsp; &nbsp; from overkill</p>
+
+      {/* Chorus 2 */}
+
+      <p className="verse-chorus-title">[Chorus 2]</p>
       <p className="chords">
-        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G/B
+        Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; Asus4 &nbsp; &nbsp; &nbsp; A
       </p>
-      <p>from overkill</p>
-      <p>
-        <br />
-      </p>
-      <p>[Chorus]</p>
+      <p>&nbsp; &nbsp; Day after day it reappears</p>
       <p className="chords">
-        Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Asus4
-        &nbsp; A
+        Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; Asus4 &nbsp; &nbsp; &nbsp; A
       </p>
-      <p>Day after day it reappears</p>
+      <p>&nbsp; &nbsp; Night after night my heartbeat shows the fear</p>
       <p className="chords">
-        Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Asus4
-        &nbsp; A
-      </p>
-      <p>Night after night my heartbeat shows the fear</p>
-      <p className="chords">
-        F#sus4 &nbsp; F#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
+        F#sus4 &nbsp; F#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; G
       </p>
       <p>Ghosts appear and fade away</p>
       <p className="chords">
-        Asus4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+        Asus4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
       </p>
-      <p>Come back another day</p>
-      <p>
-        <br />
-      </p>
-      <p>[Verse]</p>
+      <p>&nbsp; &nbsp; Come back another day</p>
+
+      {/* Verse 3 */}
+
+      <p className="verse-chorus-title">[Verse 3]</p>
       <p className="chords">
-        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A/C#
+        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; A/C#
       </p>
-      <p>I can't get to sleep</p>
+      <p>&nbsp; &nbsp; I can't get to sleep</p>
       <p className="chords">
-        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G/B
+        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        G/B
       </p>
-      <p>I think about the implications</p>
+      <p>&nbsp; &nbsp; I think about the implications</p>
       <p className="chords">
-        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A/C#
+        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; A/C#
       </p>
-      <p>Of diving in too deep</p>
+      <p>&nbsp; &nbsp; Of diving in [ &nbsp; ] too deep</p>
       <p className="chords">
-        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G/B
+        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; G/B
       </p>
-      <p>And possibly the complications</p>
+      <p>&nbsp; &nbsp; And possibly the complications</p>
       <p className="chords">
-        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A/C#
+        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A/C#
       </p>
-      <p>Especially at night</p>
-      <p className="chords">
-        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G/B
-      </p>
-      <p>I worry over situations tha-at...</p>
-      <p className="chords">
-        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A/C#
-      </p>
-      <p>I know will be alright</p>
+      <p>&nbsp; &nbsp; Especially at night</p>
       <p className="chords">
         C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G/B
       </p>
-      <p>It's just overkill</p>
-      <p>
-        <br />
-      </p>
-      <p>[Chorus]</p>
+      <p>&nbsp; &nbsp; I worry over situations that - I..</p>
       <p className="chords">
-        Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Asus4
-        &nbsp; A
+        D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; A/C#
       </p>
-      <p>Day after day it reappears</p>
+      <p>&nbsp; &nbsp; I know will be alright</p>
       <p className="chords">
-        Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Asus4
-        &nbsp; A
+        C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G/B
       </p>
-      <p>Night after night my heartbeat shows the fear</p>
+      <p>&nbsp; &nbsp; It's just overkill</p>
+
+      {/* Chorus 3 */}
+
+      <p className="verse-chorus-title">[Chorus 3]</p>
       <p className="chords">
-        F#sus4 &nbsp; F#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
+        Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; Asus4 &nbsp; &nbsp; &nbsp; A
+      </p>
+      <p>&nbsp; &nbsp; Day after day it reappears</p>
+      <p className="chords">
+        Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; Asus4 &nbsp; &nbsp; &nbsp; A
+      </p>
+      <p>&nbsp; &nbsp; Night after night my heartbeat shows the fear</p>
+      <p className="chords">
+        F#sus4 &nbsp; F#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; G
       </p>
       <p>Ghosts appear and fade away</p>
       <p className="chords">
-        F#sus4 &nbsp; F#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
+        F#sus4 &nbsp; F#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; G
       </p>
       <p>Ghosts appear and fade away</p>
       <p className="chords">
-        F#sus4 &nbsp; F#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
+        F#sus4 &nbsp; F#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; G
       </p>
       <p>Ghosts appear and fade away</p>
     </div>

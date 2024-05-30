@@ -112,7 +112,10 @@ const Wonderwall = () => {
           </button>
         </div>
       </div>
-      <p>[Verse 1]</p>
+
+      {/* Verse 1 */}
+
+      <p className="verse-chorus-title">[Verse 1]</p>
       <p className="chords">Em &nbsp; &nbsp; &nbsp; G</p>
       <p>Today is gonna be the day</p>
       <p className="chords">
@@ -136,10 +139,10 @@ const Wonderwall = () => {
         &nbsp; &nbsp; &nbsp; &nbsp;C D &nbsp;A7sus4 &nbsp;A7sus4
       </p>
       <p>Feels the way I do about you now</p>
-      <p>
-        <br />
-      </p>
-      <p>[Verse 2]</p>
+
+      {/* Verse 2 */}
+
+      <p className="verse-chorus-title">[Verse 2]</p>
       <p className="chords">Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G</p>
       <p>Backbeat the word is on the street</p>
       <p className="chords">
@@ -166,10 +169,10 @@ const Wonderwall = () => {
         &nbsp; &nbsp; &nbsp;Em &nbsp;G &nbsp;D &nbsp;A7sus4
       </p>
       <p>The way I do about you now</p>
-      <p>
-        <br />
-      </p>
-      <p>[Pre-Chorus]</p>
+
+      {/* Pre-Chorus 1 */}
+
+      <p className="verse-chorus-title">[Pre-Chorus 1]</p>
       <p className="chords">
         &nbsp; &nbsp; &nbsp;C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp;D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em
@@ -190,10 +193,10 @@ const Wonderwall = () => {
         &nbsp; &nbsp; &nbsp; &nbsp;D &nbsp; &nbsp; &nbsp;A7sus4
       </p>
       <p>But I don&apos;t know how</p>
-      <p>
-        <br />
-      </p>
-      <p>[Chorus]</p>
+
+      {/* Chorus 1*/}
+
+      <p className="verse-chorus-title">[Chorus 1]</p>
       <p className="chords">
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C &nbsp; &nbsp;Em &nbsp;G
       </p>
@@ -210,10 +213,10 @@ const Wonderwall = () => {
         &nbsp;Em &nbsp;G &nbsp; Em
       </p>
       <p>You&apos;re my wonderwall</p>
-      <p>
-        <br />
-      </p>
-      <p>[Verse 3]</p>
+
+      {/* Verse 3 */}
+
+      <p className="verse-chorus-title">[Verse 3]</p>
       <p className="chords">Em &nbsp; &nbsp; &nbsp; &nbsp;G</p>
       <p>Today was gonna be the day</p>
       <p className="chords">
@@ -227,7 +230,9 @@ const Wonderwall = () => {
         &nbsp; &nbsp; D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp;A7sus4
       </p>
-      <p>Realised what you&apos;re not to do</p>
+      <p>
+        Realised what you&apos;re <i>not to do</i>
+      </p>
       <p className="chords">
         Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
       </p>
@@ -240,10 +245,10 @@ const Wonderwall = () => {
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em &nbsp;G &nbsp;D &nbsp;A7sus4
       </p>
       <p>About you now</p>
-      <p>
-        <br />
-      </p>
-      <p>[Pre-Chorus]</p>
+
+      {/* Pre-Chorus 2*/}
+
+      <p className="verse-chorus-title">[Pre-Chorus 2]</p>
       <p className="chords">
         &nbsp; &nbsp; &nbsp;C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp;D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em
@@ -264,10 +269,10 @@ const Wonderwall = () => {
         &nbsp; &nbsp; &nbsp; &nbsp;D &nbsp; &nbsp; &nbsp;A7sus4
       </p>
       <p>But I don&apos;t know how</p>
-      <p>
-        <br />
-      </p>
-      <p>[Chorus]</p>
+
+      {/* Chorus 2*/}
+
+      <p className="verse-chorus-title">[Chorus 2]</p>
       <p className="chords">
         &nbsp; &nbsp; &nbsp; &nbsp; C &nbsp; &nbsp;Em &nbsp;G
       </p>

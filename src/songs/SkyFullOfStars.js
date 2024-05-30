@@ -121,17 +121,6 @@ const SkyFullOfStars = () => {
             </div>
           )}
         </div>
-        <div className="hint">
-          Hint: Watch this{" "}
-          <a
-            href="https://www.youtube.com/watch?v=VPRjCeoBqrI"
-            target="_blank"
-            rel="noreferrer"
-          >
-            video
-          </a>{" "}
-          for the official music video by Coldplay.
-        </div>
         <div className="font-size-controls">
           <h2>font size:</h2>
           <button
@@ -147,9 +136,27 @@ const SkyFullOfStars = () => {
             -
           </button>
         </div>
+        <div className="hint">
+          Hint: Watch this{" "}
+          <a
+            href="https://www.youtube.com/watch?v=VPRjCeoBqrI"
+            target="_blank"
+            rel="noreferrer"
+          >
+            video
+          </a>{" "}
+          for the official music video by Coldplay.
+        </div>
       </div>
+
+      {/* Intro */}
+
+      <p className="verse-chorus-title">[Intro]</p>
+
+      {/* Verse 1 */}
+
       <p className="chords">C#m &nbsp; A &nbsp; E &nbsp; G#m ~repeat 4x</p>
-      <p>[Verse]</p>
+      <p className="verse-chorus-title">[Verse 1]</p>
       <p className="chords">
         C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp;
@@ -174,10 +181,10 @@ const SkyFullOfStars = () => {
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G#m
       </p>
       <p>'Cause you light up the path</p>
-      <p>
-        <br />
-      </p>
-      <p>[Chorus]</p>
+
+      {/* Chorus 1 */}
+
+      <p className="verse-chorus-title">[Chorus 1]</p>
       <p className="chords">
         C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp;
@@ -203,10 +210,10 @@ const SkyFullOfStars = () => {
       </p>
       <p>I think I saw you</p>
       <p className="chords">C#m &nbsp; A &nbsp; E &nbsp; G#m ~repeat 3x</p>
-      <p>
-        <br />
-      </p>
-      <p>[Verse]</p>
+
+      {/* Verse 2 */}
+
+      <p className="verse-chorus-title">[Verse 2]</p>
       <p className="chords">
         C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp;
@@ -231,10 +238,10 @@ const SkyFullOfStars = () => {
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G#m
       </p>
       <p>I'm gonna give you my heart</p>
-      <p>
-        <br />
-      </p>
-      <p>[Chorus]</p>
+
+      {/* Chorus 2 */}
+
+      <p className="verse-chorus-title">[Chorus 2]</p>
       <p className="chords">
         C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp;
@@ -267,10 +274,10 @@ const SkyFullOfStars = () => {
       <p>I think I see you</p>
       <p className="chords">C#m &nbsp; A &nbsp; E &nbsp; G#m ~repeat 4x</p>
       <p className="chords">A &nbsp; B &nbsp; C#m &nbsp; ~repeat 2x</p>
-      <p>
-        <br />
-      </p>
-      <p>[Outro]</p>
+
+      {/* Outro */}
+
+      <p className="verse-chorus-title">[Outro]</p>
       <p className="chords">
         A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#m

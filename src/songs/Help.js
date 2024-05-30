@@ -129,7 +129,10 @@ const Help = () => {
           </button>
         </div>
       </div>
-      <p>[Intro]</p>
+
+      {/* Intro */}
+
+      <p className="verse-chorus-title">[Intro]</p>
       <p className="chords">
         Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; Bm/A
@@ -144,10 +147,10 @@ const Help = () => {
       <p>Help! You know I need someone,</p>
       <p className="chords">A</p>
       <p>Help!</p>
-      <p>
-        <br />
-      </p>
-      <p>[Verse 1]</p>
+
+      {/* Verse 1 */}
+
+      <p className="verse-chorus-title">[Verse 1]</p>
       <p className="chords">
         A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -175,10 +178,10 @@ const Help = () => {
         G &nbsp; &nbsp; &nbsp; &nbsp; A
       </p>
       <p>Now I find I've changed my mind, I've opened up the doors.</p>
-      <p>
-        <br />
-      </p>
-      <p>[Chorus]</p>
+
+      {/* Chorus 1 */}
+
+      <p>[Chorus 1]</p>
       <p className="chords">
         Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -200,10 +203,10 @@ const Help = () => {
       <p>
         Help me get my feet back on the ground, won't you please please help me.
       </p>
-      <p>
-        <br />
-      </p>
-      <p>[Verse 2]</p>
+
+      {/* Verse 2 */}
+
+      <p className="verse-chorus-title">[Verse 2]</p>
       <p className="chords">
         A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -230,10 +233,10 @@ const Help = () => {
         &nbsp; &nbsp; &nbsp; &nbsp; G &nbsp; &nbsp; &nbsp; &nbsp; A
       </p>
       <p>I know that I just need you like I've never done before.</p>
-      <p>
-        <br />
-      </p>
-      <p>[Chorus]</p>
+
+      {/* Chorus 2 */}
+
+      <p className="verse-chorus-title">[Chorus 2]</p>
       <p className="chords">
         Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -255,10 +258,10 @@ const Help = () => {
       <p>
         Help me get my feet back on the ground, won't you please please help me.
       </p>
-      <p>
-        <br />
-      </p>
-      <p>[Verse 3]</p>
+
+      {/* Verse 3 */}
+
+      <p className="verse-chorus-title">[Verse 3]</p>
       <p className="chords">
         A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -285,10 +288,10 @@ const Help = () => {
         &nbsp; &nbsp; &nbsp; &nbsp; G &nbsp; &nbsp; &nbsp; &nbsp; A
       </p>
       <p>Now I find I've changed my mind, I've opened up the doors.</p>
-      <p>
-        <br />
-      </p>
-      <p>[Chorus]</p>
+
+      {/* Chorus 3 */}
+
+      <p className="verse-chorus-title">[Chorus 3]</p>
       <p className="chords">
         Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
