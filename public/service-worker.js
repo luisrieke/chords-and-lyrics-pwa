@@ -1,5 +1,12 @@
 const CACHE_NAME = "cache-v1";
-const urlsToCache = ["/", "/index.html", "/styles.css", "/logo512.png"];
+const urlsToCache = [
+  "/",
+  "/index.html",
+  "/styles.css",
+  "/logo192.png",
+  "/logo512.png",
+  // Add other assets you want to cache
+];
 
 self.addEventListener("install", (event) => {
   console.log("[Service Worker] Install Event processing");
@@ -17,29 +24,37 @@ self.addEventListener("install", (event) => {
 self.addEventListener("fetch", (event) => {
   console.log(`[Service Worker] Fetch event for ${event.request.url}`);
 
-  event.respondWith(
-    caches.match(event.request).then((response) => {
-      if (response) {
-        console.log(`[Service Worker] Found ${event.request.url} in cache`);
-        return response;
-      }
-
-      console.log(`[Service Worker] Network request for ${event.request.url}`);
-      return fetch(event.request).then((response) => {
-        if (!response || response.status !== 200 || response.type !== "basic") {
+  if (event.request.url.startsWith("http")) {
+    event.respondWith(
+      caches.match(event.request).then((response) => {
+        if (response) {
+          console.log(`[Service Worker] Found ${event.request.url} in cache`);
           return response;
         }
 
-        const responseToCache = response.clone();
+        console.log(
+          `[Service Worker] Network request for ${event.request.url}`
+        );
+        return fetch(event.request).then((response) => {
+          if (
+            !response ||
+            response.status !== 200 ||
+            response.type !== "basic"
+          ) {
+            return response;
+          }
 
-        caches.open(CACHE_NAME).then((cache) => {
-          cache.put(event.request, responseToCache);
+          const responseToCache = response.clone();
+
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseToCache);
+          });
+
+          return response;
         });
-
-        return response;
-      });
-    })
-  );
+      })
+    );
+  }
 });
 
 self.addEventListener("activate", (event) => {

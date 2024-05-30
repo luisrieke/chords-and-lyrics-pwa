@@ -8,6 +8,7 @@ import SkyFullOfStars from "./songs/SkyFullOfStars";
 import Help from "./songs/Help";
 import DreamCatchMe from "./songs/DreamCatchMe";
 import ScrollToTop from "./components/ScrollToTop";
+import InstallButton from "./components/InstallButton";
 import {
   toggleScroll,
   increaseSpeed,
@@ -27,6 +28,7 @@ const Home = () => (
     </div>
     <h1>Chords & Lyrics</h1>
     <img src="/logo512.png" alt="Logo" className="logo" />
+    <InstallButton />
     <h2>Newly added songs:</h2>
     <ul>
       <li>

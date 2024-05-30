@@ -214,9 +214,10 @@ body.day-mode .logo {
 }
 
 .request-button {
-  background-color: rgb(144, 178, 183, 0.4);
+  border-color: rgb(144, 178, 183, 0.4);
+  background: none;
   color: rgb(255, 255, 255, 0.9);
-  border: none;
+  border: dotted;
   border-radius: 12px;
   cursor: pointer;
   white-space: nowrap;
@@ -225,16 +226,17 @@ body.day-mode .logo {
 }
 
 .request-button:hover {
-  background-color: rgb(144, 178, 183);
+  border-color: rgb(144, 178, 183);
 }
 
 body.day-mode .request-button {
-  background-color: rgb(144, 178, 183, 0.4);
+  border-color: rgb(144, 178, 183, 0.4);
+  background: none;
   color: rgb(0, 0, 0, 0.9);
 }
 
 body.day-mode .request-button:hover {
-  background-color: rgb(144, 178, 183);
+  border-color: rgb(144, 178, 183);
 }
 
 /* Chord images */

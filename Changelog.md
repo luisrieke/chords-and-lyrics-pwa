@@ -13,6 +13,8 @@ Please stick to the change type wording `Added`, `Changed`, `Removed`, `Fixed`.
 
 - added a new song: Dream Catch Me from Newton Faulkner
 - added manifest.json for PWA
+- maskable icons for PWA
+- install button for PWA which is shown until the app is installed
 
 ### Changed
 
