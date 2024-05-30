@@ -12,6 +12,7 @@ Please stick to the change type wording `Added`, `Changed`, `Removed`, `Fixed`.
 ### Added
 
 - added a new song: Dream Catch Me from Newton Faulkner
+- added manifest.json for PWA
 
 ### Changed
 
