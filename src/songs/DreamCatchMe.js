@@ -4,7 +4,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { increaseFontSize, decreaseFontSize } from "../fontResizer";
 
 const DreamCatchMe = () => {
-  const songUrl = "https://chordsandlyrics.app/dream-catch-me";
+  const songUrl = "https://chordsandlyrics.app/dreamcatchme";
   const [buttonText, setButtonText] = useState("Share");
   const [showChords, setShowChords] = useState(false);
 
