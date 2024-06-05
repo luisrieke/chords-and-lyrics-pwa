@@ -1,11 +1,10 @@
-const CACHE_NAME = "cache-v2"; // Erhöhe die Versionsnummer bei jeder neuen Version
+const CACHE_NAME = "cache-v3";
 const urlsToCache = [
   "/",
   "/index.html",
   "/styles.css",
   "/logo192.png",
   "/logo512.png",
-  // Add other assets you want to cache
 ];
 
 self.addEventListener("install", (event) => {

@@ -210,10 +210,6 @@ body.day-mode .song-list a {
   box-shadow: 0 12px 36px rgb(144, 178, 183);
 }
 
-body.day-mode .logo img {
-  filter: invert(1);
-}
-
 .request-button {
   border-color: rgb(144, 178, 183, 0.4);
   background: none;

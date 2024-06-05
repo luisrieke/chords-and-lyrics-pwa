@@ -18,7 +18,6 @@ Please stick to the change type wording `Added`, `Changed`, `Removed`, `Fixed`.
 
 - fixed caching issues (service worker)
 - logo border radius problems
-- logo inerting is just for the img tag
 
 ## [0.0.4] - 2024-05-30
 
