@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Please stick to the change type wording `Added`, `Changed`, `Removed`, `Fixed`.
 
+## [0.0.5] - 2024-06-05
+
+### Changed
+
+- added box shadow to logo
+
 ## [0.0.4] - 2024-05-30
 
 ### Added
