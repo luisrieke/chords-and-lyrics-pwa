@@ -23,7 +23,7 @@ const Home = () => (
     </HelmetProvider>
     <div className="mode-switcher">
       <button id="modeButton" onClick={toggleMode}>
-        🌞
+        🌒
       </button>
     </div>
     <h1>Chords & Lyrics</h1>
@@ -71,7 +71,7 @@ const SongLayout = ({ children }) => (
     </div>
     <div className="mode-switcher">
       <button id="modeButton" onClick={toggleMode}>
-        🌞
+        🌘
       </button>
     </div>
     {children}

@@ -13,6 +13,8 @@ Please stick to the change type wording `Added`, `Changed`, `Removed`, `Fixed`.
 
 - added box shadow to logo
 - increased cache version to ensure new content is loaded
+- more sensible and less aggressive colors for buttons to get the songtext in the right focus
+- more beautiful day night switcher
 
 ### Fixed
 

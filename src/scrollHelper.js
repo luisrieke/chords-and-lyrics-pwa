@@ -52,9 +52,9 @@ export function toggleMode() {
   const modeButton = document.getElementById("modeButton");
   if (body.classList.contains("day-mode")) {
     body.classList.remove("day-mode");
-    modeButton.innerText = "🌞";
+    modeButton.innerText = "🌘";
   } else {
     body.classList.add("day-mode");
-    modeButton.innerText = "🌜";
+    modeButton.innerText = "🌖";
   }
 }

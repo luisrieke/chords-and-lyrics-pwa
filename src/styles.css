@@ -66,21 +66,21 @@ a {
   display: flex;
   justify-content: center;
   width: 100%;
-  z-index: 1000;
+  z-index: 999;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   padding: 24px;
 }
 
 button {
-  background-color: white;
+  background-color: rgb(57 71 73);
   color: black;
   border: none;
   border-radius: 12px;
   padding: 10px;
   cursor: pointer;
   font-size: 16px;
-  z-index: 1001;
+  z-index: 999;
   display: inline-block;
   margin: 12px;
 }
@@ -90,7 +90,7 @@ body.day-mode .controls {
 }
 
 body.day-mode button {
-  background-color: black;
+  background-color: #d2e0e2;
   color: white;
 }
 
@@ -120,18 +120,20 @@ body.day-mode button {
 }
 
 .home-button {
-  background-color: white;
   color: black;
+  background-color: rgb(57 71 73);
   border: none;
   border-radius: 12px;
   padding: 10px;
   cursor: pointer;
   font-size: 16px;
+  box-shadow: 4px 4px 28px rgba(0, 0, 0, 1);
 }
 
 body.day-mode .home-button {
-  background-color: black;
+  background-color: #d2e0e2;
   color: white;
+  box-shadow: 4px 4px 28px rgb(255, 255, 255);
 }
 
 .hint {
@@ -156,7 +158,7 @@ body.day-mode .home-button {
 .font-size-controls {
   display: flex;
   width: 100%;
-  z-index: 1000;
+  z-index: 999;
 }
 
 .font-size-controls button {
@@ -213,7 +215,7 @@ body.day-mode .song-list a {
 .request-button {
   border-color: rgb(144, 178, 183, 0.4);
   background: none;
-  color: rgb(255, 255, 255, 0.9);
+  color: rgb(57 71 73);
   border: dotted;
   border-radius: 12px;
   cursor: pointer;
@@ -229,7 +231,7 @@ body.day-mode .song-list a {
 body.day-mode .request-button {
   border-color: rgb(144, 178, 183, 0.4);
   background: none;
-  color: rgb(0, 0, 0, 0.9);
+  color: rgb(144, 178, 183, 0.4);
 }
 
 body.day-mode .request-button:hover {
