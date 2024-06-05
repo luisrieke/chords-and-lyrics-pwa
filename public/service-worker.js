@@ -1,4 +1,4 @@
-const CACHE_NAME = "cache-v1";
+const CACHE_NAME = "cache-v2"; // Erhöhe die Versionsnummer bei jeder neuen Version
 const urlsToCache = [
   "/",
   "/index.html",

@@ -206,11 +206,11 @@ body.day-mode .song-list a {
   width: 100%;
   max-width: 120px;
   height: auto;
-  border-radius: 36px;
+  border-radius: 48px;
   box-shadow: 0 12px 36px rgb(144, 178, 183);
 }
 
-body.day-mode .logo {
+body.day-mode .logo img {
   filter: invert(1);
 }
 

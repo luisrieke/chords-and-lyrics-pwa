@@ -12,6 +12,13 @@ Please stick to the change type wording `Added`, `Changed`, `Removed`, `Fixed`.
 ### Changed
 
 - added box shadow to logo
+- increased cache version to ensure new content is loaded
+
+### Fixed
+
+- fixed caching issues (service worker)
+- logo border radius problems
+- logo inerting is just for the img tag
 
 ## [0.0.4] - 2024-05-30
 
