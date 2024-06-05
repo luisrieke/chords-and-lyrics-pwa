@@ -206,7 +206,8 @@ body.day-mode .song-list a {
   width: 100%;
   max-width: 120px;
   height: auto;
-  border-radius: 24px;
+  border-radius: 36px;
+  box-shadow: 0 12px 36px rgb(144, 178, 183);
 }
 
 body.day-mode .logo {
